@@ -3,7 +3,7 @@
 
 :root{
  --cor-primaria: #ab49cc;
- --font-primaria: 'Montserrat', sans-serif;
+ --cor-secundaria: #fffd85;
 } 
 
 *{
@@ -12,6 +12,7 @@
     background: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 
 html {
