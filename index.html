@@ -1,56 +1,72 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
-    <head> 
-        <!--Define os conjuntos de caracteres utilizados na página-->
-        <meta charset = "UTF-8">
-        <!--Compatibilidade com navegadores mais antigos-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--Adaptação da tela-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/Monarch Butterfly - small.png" type="image/x-icon">
-        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="./css/styleweb.css">
-        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px) " href="./css/styletablet.css">
-        <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/stylemobile.css">
-        <script src="script.js" defer></script>
-        <title>Portifolio</title>
-    </head>
-
-    <body>
-    <main>
-
-
-        <nav class="menu">
-            <a href="#home" title="Home" class="menu_ancora"><img src="imagens/home-page.png" alt="Home" class="menu_icone"></a>
-            <a href="#profile" title="Sobre mim" class="menu_ancora"><img src="imagens/user-female.png" alt="Profile" class="menu_icone"></a>
-            <a href="#projects" title="Projetos" class="menu_ancora"><img src="imagens/briefcase.png" alt="Briefcase" class="menu_icone"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assets/butterfly-ico.svg" type="image/x-icon">
+    <script src="./JS/script.js" defer></script> 
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="header__nav__text" id="header__title">Raiele leite</a>
+        <nav class="header__nav">  
+            <a href="#aboutme" class="header__nav__text">About me</a>
+            <a href="#projects" class="header__nav__text">Projects</a>
+            <a href="#services" class="header__nav__text">Services</a>
+            <a href="#contact" class="header__nav__text">Contact</a>
         </nav>
-
-        <div class="conteudo">
-            <section id="home">
-                <h2 class="conteudo_h2">Desenvolvendo</h2>
-                <h3 id="conteudo_h3">Ideias.</h3>
-
-
-            </section>
-            <section id="profile">
-                <div class="perfil">
-                    <img src="imagens/fotoOficialRedonda.png" alt="Imagem de Raiele" class="perfil_imagem" >
-                    <h1 class="perfil_name">Raiele Leite</h1>
-                    <h2 class="perfil_profissional">Web Developer and UX Designer</h2>  
-                    <div class="social_media">
-                        <a href="https://github.com/RaieleLeite" class="menu_ancora"><img src="imagens/github.png" alt="GitHub" class="menu_icone"></a>
-                        <a href="https://www.linkedin.com/in/raiele-leite"class="menu_ancora"><img src="imagens/linkedin-circled.png" alt="linkedin"class="menu_icone"></a>
-                    </div>
-                </div>
-                <h2>Sobre mim</h2>
-                <p id="conteudo-text-top">Olá, meu nome é Raiele Leite, sou estudante de Engenharia da Comutação e apaixonada por tecnologia.</p>
-                <p>Estudei durante 2 anos e meio o curso de Engenharia Ambiental pela Universidade Federal Rural de Pernambuco, mas apesar de boas notas, não me identificava com nada que se relacionava ao mesmo. Entretanto, esta caminhada me possibilitou o contato com o mundo computacional logo no primeiro semestre através da cadeira de Introdução à Programação, na qual produzi um projeto  que utilizava a linguagem C e C++,  durante sua realização percebi o quão interessada e empolgada eu ficava ao realizar aquele simples projeto. </p> 
-                <p>Apesar disto, permaneci no curso de Engenharia Ambiental, embora o  interesse pelo universo computacional se manter vivo durante todos os outros semestres posteriores. Então, no ano de 2022 decidi, finalmente, seguir meu real interesse e afinal ingressar no mundo da computação de cabeça.</p>
-            </section>
-            <section id="projects">
-                <h2>Projetos</h2> 
-            </section>
+       <div class="toggle__light">
+        <div class="toggle__light__bcg">
+            <img src="./assets/sun.svg" alt="Sun" class="toggle__light__icon">
         </div>
+       </div>
+    </header>  
+
+    <main>
+        <section id="home" class="main__home">
+            <div class="div-name">
+            </div>
+            <div class="content">
+            <div class="home-icons">
+                <a href="https://github.com/RaieleLeite">
+                    <svg class="icons-social" width="80" height="79" viewBox="0 0 80 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53 77.8401C68.7098 72.4442 80 57.5406 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 58.6384 12.7477 74.2994 30 78.7398V70H23.5C20.7 70.3999 18.5 66 18.5 66C18.5 66 15.3333 59.5 13.5 57H15C16 57 20.1667 60.5 22 62.5C24.8 63.7 29.5 63 31.5 62.5C31.5 59.4999 35.3913 56.4433 36 56.5C21.6 55.3 17 45.5 17 40C17 34.5 19.6666 31 21.5 29C19.5 24.2 21.5 17 21.5 17C21.5 17 29.5 18.4999 31.5 22C31.9 20.8 38.2089 20.0382 42 20C45.9824 19.9597 50.1666 21.3333 52 22C56.0977 17.9023 58.8521 17.4987 60.8137 17.2112C61.2456 17.1479 61.6391 17.0902 62 17C63.6 19 62.6667 26 62 29C65.2 32.6 66.6796 36.7484 66.5 41.5C66.1393 51.0451 53.6666 55.6667 47.5 56.5C50.7 58.9 52.5 63.5 53 65.5C53.5 67.5 53 77.5 53 77.5L53 77.8401Z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="www.linkedin.com/in/raiele-leite">
+                    <svg class="icons-social" width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M80 40.7397C80 62.8311 62.0914 80.7397 40 80.7397C17.9086 80.7397 0 62.8311 0 40.7397C0 18.6484 17.9086 0.739746 40 0.739746C62.0914 0.739746 80 18.6484 80 40.7397ZM36.5 57.7398V30.7398H46V34.7398H47C47 31.9398 51.1805 30.7358 54.5 30.7398C59.4706 30.7458 63.5 34.7397 63.5 39.7398V57.7398H54V40.7398C54 39.7398 53.3 37.7398 50.5 37.7398C47.7 37.7398 46.5 39.7398 46.5 40.7398V57.7398H36.5ZM20 57.7398V30.7398H30V57.7398H20ZM24.5 27.7397C26.9853 27.7397 29 25.725 29 23.2397C29 20.7545 26.9853 18.7397 24.5 18.7397C22.0147 18.7397 20 20.7545 20 23.2397C20 25.725 22.0147 27.7397 24.5 27.7397Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="center">
+                <img src="./assets/phrase (1).svg" alt="">
+                <img src="./assets/butterfly.svg" alt="">
+            </div>
+            <div>
+                <img src="./assets/Setas.svg" alt="Arrow">
+            </div>
+            </div>
+            
+
+        </section>
+
+        <section id="aboutme" class="main__home">
+            <h2>Teste</h2>
+
+        </section>
+
+        <section id="projects" class="main__home">
+            <h2>Teste</h2>
+    
+        </section>
+
     </main>
-    </body>
+
+    <footer></footer>
+
+</body>
 </html>
