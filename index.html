@@ -11,19 +11,22 @@
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="header__nav__text" id="header__title">Raiele leite</a>
         <nav class="header__nav">  
-            <a href="#aboutme" class="header__nav__text">About me</a>
-            <a href="#projects" class="header__nav__text">Projects</a>
-            <a href="#services" class="header__nav__text">Services</a>
-            <a href="#contact" class="header__nav__text">Contact</a>
+            <h1>
+                <a href="#home" class="header__nav__text" id="header__title">Raiele Leite</a>
+            </h1>
+            <ul class="header__nav__list">
+                <li><a href="#aboutme" class="header__nav__text">About me</a></li>
+                <li><a href="#projects" class="header__nav__text">Projects</a></li>
+                <li><a href="#services" class="header__nav__text">Services</a></li>
+                <li><a href="#contact" class="header__nav__text">Contact</a></li>
+            </ul>
+            <button class="toggle__light" aria-label="Toggle theme">
+                <img src="./assets/sun.svg" alt="Sun" class="toggle__light__icon">
+            </button>
         </nav>
-       <div class="toggle__light">
-        <div class="toggle__light__bcg">
-            <img src="./assets/sun.svg" alt="Sun" class="toggle__light__icon">
-        </div>
-       </div>
-    </header>  
+    </header>
+
 
     <main>
         <section id="home" class="main__home">
